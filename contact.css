@@ -14,3 +14,17 @@ div{
 a{
     display:contents;
 }
+
+@media (max-width:500px){
+    *{
+        background-color: skyblue;
+        color: rgb(34, 4, 4);
+        padding: 2px 0px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    div{
+        font-size: 15px;
+    }
+}
