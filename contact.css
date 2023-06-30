@@ -1,6 +1,6 @@
 *{
-    background-color: #cca;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     padding:5px 5px;
 }
 h1{
@@ -11,10 +11,16 @@ div{
     font-family: sans-serif;
 
 }
-a{
+div a{
     display:contents;
+    color: rgb(191, 191, 236);
 }
-
+button{
+    background-color: rgb(175, 175, 175);
+}
+button a{
+    color: black;
+}
 @media (max-width:500px){
     *{
         background-color: skyblue;
