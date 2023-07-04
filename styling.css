@@ -26,13 +26,13 @@ body{
     background-color: #9ff7f6; */
 }
 .logo{
-    width: 150px;
+    width: 200px;
 }
 /* Remove bullets, margin and padding */
 .myNav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 30px;
 }
 /* Define the block styling for the links */
 .myNav ul li a {
@@ -332,13 +332,13 @@ form input, form textarea{
         padding: 5px 5px;
     }
     .logo{
-        width: 70px;
+        width: 100px;
     }
     .myNav ul li{
-        margin: 0px 5px;
+        margin: 0px 10px;
     }
     .myNav ul li a{
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 5px;
     }
     .myNav ul li a::after{
