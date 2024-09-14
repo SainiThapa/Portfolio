@@ -1,0 +1,131 @@
+*{
+    margin: 0; padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    /* height: 20vh; */
+    /* background-image: url(images/Picture.jpg); */
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+.myNav {
+    display: flex;
+    align-items: center; justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 200px;
+}
+/* Remove bullets, margin and padding */
+.myNav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+/* Define the block styling for the links */
+.myNav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    position: relative;
+}
+.myNav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #ff00ff;
+    position: absolute;
+    left:0; bottom:-6px;
+    transition: 0.5s;
+}
+.myNav ul li a:hover::after{
+    width:100px;
+
+}
+
+.Header_text{
+    margin-top: 0;
+}
+.Header_text h1{
+    font-size: 60px;
+    margin-top: 0;
+}
+.Header_text span{
+    color: #00ffff;
+}
+
+ /* Card Container */
+ .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Box */
+.card {
+    background-color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  /* Flexbox on the card */
+    justify-content: space-between;
+    height: 100%;  /* Ensure full height for the card */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.card p {
+    color: #bbb;
+    font-size: 0.9em;
+    padding: 0 15px;
+    flex-grow: 1;  /* Allow the description to grow and push the button down */
+    margin-bottom: 5px  ;
+}
+
+.card a {
+    display: block;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+    margin-top: auto;  /* Ensure the button stays at the bottom */
+}
+
+.card a:hover {
+    background-color: #555;
+}
